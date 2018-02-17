@@ -25,8 +25,9 @@ angular.module('starter.controllers', [])
     //FCMPlugin.subscribeToTopic( topic, successCallback(msg), errorCallback(err) );
     //All devices are subscribed automatically to 'all' and 'ios' or 'android' topic respectively.
     //Must match the following regular expression: "[a-zA-Z0-9-_.~%]{1,900}".
-    FCMPlugin.subscribeToTopic('all');
-
+    if (typeof FCMPlugin !== 'undefined') {
+      FCMPlugin.subscribeToTopic('all');
+    }
     $http({
       method: "POST",
       dataType: 'jsonp',
