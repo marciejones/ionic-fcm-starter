@@ -1,4 +1,4 @@
-##Same as https://github.com/mexists/ionic-fcm-starter but this version works with ionic serve
+## Same as https://github.com/mexists/ionic-fcm-starter but this version works with ionic serve
 
 # Ionic Firebase Cloud Messaging Starter
 A simple cloud messaging using Ionic and Firebase Cloud Messaging (FCM).
